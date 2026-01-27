@@ -87,7 +87,7 @@ export default function SignUp() {
               placeholder="user-Lastname"
             />
             <ErrorMessage
-              name="lasttName"
+              name="lastName"
               component="div"
               className="text-red-500 text-sm mt-1"
             />
@@ -134,7 +134,7 @@ export default function SignUp() {
        <div className="w-[576px] h-[148px] flex flex-col justify-center items-center gap-3">
               <p className="font-sans font-normal text-[14px] text-black">or</p>
               <button className="h-[46px] rounded-lg bg-white font-sans font-normal text-sm">
-                Login with Google{" "}
+                Login with Google
               </button>
               <button className="h-[46px] rounded-lg bg-white font-sans font-normal text-sm">
                 Login with Facebook
