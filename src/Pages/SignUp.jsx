@@ -1,7 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
@@ -11,20 +10,25 @@ import { FaFacebook } from "react-icons/fa";
 
 export default function SignUp() {
   const navigate = useNavigate();
-  const handleRegister = async (userData) => {
+  const handleRegister = async (values) => {
+    
+
     try {
       const { data } = await axios.post(
         "https://bookstore.eraasoft.pro/api/register",
-        userData,
+        values,
       );
-
-      if (data) {
-        alert("Registration successful!");
-        navigate("/login");
-        return data;
-      }
+console.log("Success:", data);
+ navigate("/login");
+      // if (data && data.success) {
+      //   alert("Registration successful!");
+      //   navigate("/login");
+      //   return data;
+      // } else {
+      //   alert(data.message || "Registration failed");
+      // }
     } catch (error) {
-      console.error("Registration error:", error);
+      console.error("Registration error:", error.response || error);
       alert("Something went wrong. Please try again.");
     }
   };
@@ -38,7 +42,7 @@ export default function SignUp() {
       .required("password is required"),
     first_name: Yup.string().required("First Name is required"),
     last_name: Yup.string().required("Last Name is required"),
-    confirmPassword: Yup.string()
+    password_confirmation: Yup.string()
       .oneOf([Yup.ref("password"), null], "Passwords must match")
       .required("Confirm password is required"),
   });
@@ -56,7 +60,7 @@ export default function SignUp() {
             password: "",
             first_name: "",
             last_name: "",
-            confirmPassword: "",
+            password_confirmation: "",
           }}
           validationSchema={validationSchema}
           onSubmit={(values) => {
@@ -143,20 +147,20 @@ export default function SignUp() {
               className="text-red-500 text-sm"
             />
             <label
-              htmlFor="password"
+              htmlFor="password_confirmation"
               className="font-sans font-semibold text-lg text-black"
             >
               Confirm Password
             </label>
             <Field
-              name="confirmPassword"
+              name="password_confirmation"
               type="password"
-              id="confirmPassword"
+              id="password_confirmation"
               placeholder="Confirm Your password"
               className="h-9 w-full text-black border-2 rounded-lg p-5"
             />
             <ErrorMessage
-              name="confirmPassword"
+              name="password_confirmation"
               component="div"
               className="text-red-500 text-sm"
             />
