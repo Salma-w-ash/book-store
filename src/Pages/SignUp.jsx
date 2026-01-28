@@ -51,7 +51,7 @@ console.log("Success:", data);
 
   return (
     <div>
-      <Header />
+     
       <HeroSection />
       <div className="w-full h-7/12  bg-[#F5F5F5] p-5 flex flex-col justify-center items-center gap-6 py-4">
         <Formik
@@ -184,7 +184,7 @@ console.log("Success:", data);
           Login with Facebook
         </button>
       </div>
-      <Footer />
+      
     </div>
   );
 }

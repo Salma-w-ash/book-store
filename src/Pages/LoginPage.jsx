@@ -35,7 +35,7 @@ export default function LoginPage() {
   
   return (
     <div>
-      <Header />
+      
       <HeroSection />
 
       <div className="w-full h-[448px] bg-[#F5F5F5] p-5 flex flex-col justify-center items-center gap-6">
@@ -113,7 +113,7 @@ export default function LoginPage() {
           Login with Facebook
         </button>
       </div>
-      <Footer />
+     
     </div>
   );
 }
