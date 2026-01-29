@@ -7,16 +7,19 @@ import * as Yup from "yup";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const handleLogin = async (values) => {
     try {
       const { data } = await axios.post(
         "https://bookstore.eraasoft.pro/api/login",
         values,
       );
+      navigate("/Home");
       console.log("Success:", data);
     } catch (error) {
       console.log(error.response?.data || error.message);
