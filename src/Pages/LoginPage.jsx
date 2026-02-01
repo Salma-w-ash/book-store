@@ -94,10 +94,10 @@ export default function LoginPage() {
         </Formik>
         <p>
           Don’t have an account?
-          <span>
-            <a href="#" className="text-[#D9176C]">
+          <span className="text-[#D9176C] cursor-pointer" onClick={() => navigate("/signup")}>
+           
               signup
-            </a>
+            
           </span>
         </p>
       </div>
