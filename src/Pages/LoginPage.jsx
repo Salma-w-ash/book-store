@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../Components/Header";
 import HeroSection from "../Components/HeroSection";
-import Footer from "../Components/Footer";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
 
 
 export default function LoginPage() {
