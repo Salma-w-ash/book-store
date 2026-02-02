@@ -2,10 +2,10 @@ import React from "react";
 
 export default function ResetPassword() {
   return (
-    <div className="w-full h-[1260px] bg-[#F5F5F5]">
-      <div className="container mx-auto">
-        <div className="w-[480px] h-[310px] flex flex-col">
-          <h2 className="bg-[#D9176C] font-sans font-semibold text-lg">
+    <div className="w-full h-200 bg-[#F5F5F5]">
+      <div className="container mx-auto h-full flex items-center justify-center">
+        <div className="w-120 h-77.5 flex flex-col justify-center items-center gap-5">
+          <h2 className="text-[#D9176C] font-sans font-semibold text-lg">
             Reset your password!
           </h2>
           <p className="text-[#222222]/50 font-sans text-sm">
@@ -22,7 +22,7 @@ export default function ResetPassword() {
           </button>
           <p className="font-sans font-normal text-[16px]">
             Didn’t receive a code?
-            <span className="bg-[#D9176C] font-sans font-normal text-[16px]">
+            <span className="text-[#D9176C] font-sans font-normal text-[16px]">
               Send again
             </span>
           </p>

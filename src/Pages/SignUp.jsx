@@ -14,11 +14,11 @@ export default function SignUp() {
     
 
     try {
-      const { data } = await axios.post(
+      const { res } = await axios.post(
         "https://bookstore.eraasoft.pro/api/register",
         values,
       );
-console.log("Success:", data);
+console.log(res.data);
  navigate("/login");
       // if (data && data.success) {
       //   alert("Registration successful!");
@@ -52,7 +52,7 @@ console.log("Success:", data);
   return (
     <div>
      
-      <HeroSection />
+     
       <div className="w-full h-7/12  bg-[#F5F5F5] p-5 flex flex-col justify-center items-center gap-6 py-4">
         <Formik
           initialValues={{

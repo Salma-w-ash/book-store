@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../Components/HeroSection";
+import { useAuthStore } from "../index.js";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -9,15 +10,24 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function LoginPage() {
+  // const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  
+  const login = useAuthStore((state) => state.login);
   const navigate = useNavigate();
   const handleLogin = async (values) => {
     try {
-      const { data } = await axios.post(
+      const res = await axios.post(
         "https://bookstore.eraasoft.pro/api/login",
         values,
       );
+     console.log(res.status);  
+     console.log(res); 
+          //  console.log(res.data.jwt); // JWT
+
+           login(res.data.jwt);      
+
+           
       navigate("/Home");
-      console.log("Success:", data);
     } catch (error) {
       console.log(error.response?.data || error.message);
     }
@@ -36,7 +46,7 @@ export default function LoginPage() {
   return (
     <div>
       
-      <HeroSection />
+      {/* <HeroSection /> */}
 
       <div className="w-full h-[448px] bg-[#F5F5F5] p-5 flex flex-col justify-center items-center gap-6">
         <h2 className="text-2xl text-black font-bold">Welcome Back!</h2>

@@ -6,7 +6,7 @@ export default function ForgotPassword() {
     const validationSchema = Yup.object({
         email: Yup.string().required("email is required"),})
   return (
-    <div className="w-full h-[1260px] bg-[#F5F5F5]">
+    <div className="w-full h-200 bg-[#F5F5F5] flex justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-3">
         <h3 className="font-sans font-semibold text-[#D9176C] text-[16px]">
           Forget Password?

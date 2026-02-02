@@ -26,9 +26,9 @@ export default function ContactForm() {
     email: Yup.string().required("email is required")
   })
   return (
-    <div className="w-full h-[790px] bg-[#3B2F4A]">
+    <div className="w-full h-[790px] bg-[#3B2F4A] overflow-x-hidden">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="w-[592px] h-screen flex flex-col justify-center items-center gap-9">
             <h2 className="font-sans font-bold text-[40px] text-white">
               Have a Questions?
@@ -75,18 +75,22 @@ export default function ContactForm() {
             </Formik>
           </div>
 
-          <div className="w-[312px] h-full flex flex-col justify-center gap-4 ml-auto">
-            <div className="flex items-center gap-5">
-              <FaPhone className="w-12 h-12 bg-white text-[#D9176C] rounded-lg p-2" />
-              <p className="text-[16px] font-sans text-white/20">01123456789</p>
+          <div className="w-full max-w-[400px] mx-auto flex flex-col gap-6 items-center sm:items-start">
+            <div className="flex justify-center gap-3 items-center sm:items-start text-left  ">
+              <div className="bg-white p-3 rounded-lg">
+                <FaPhone className="text-[#D9176C] w-5 h-5" />
+              </div>
+
+              <p className="text-gray-400 ">01123456789</p>
             </div>
-            <div className="flex items-center gap-5">
+
+            <div className="flex  sm: items-center  gap-3 text-center">
               <MdOutlineMessage className="w-12 h-12 bg-white text-[#D9176C] rounded-lg p-2" />
               <p className="text-[16px] font-sans text-white/20">
                 Example@gmail.com
               </p>
             </div>
-            <div className="flex items-center gap-5">
+            <div className="flex sm:items-center text-center">
               <CiLocationOn className="w-12 h-12 bg-white text-[#D9176C] rounded-lg p-2" />
               <p className="text-[16px] font-sans w-[248px] text-white/20">
                 adipiscing elit. Mauris et ultricies est. Aliquam in justo

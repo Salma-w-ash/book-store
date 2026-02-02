@@ -6,9 +6,9 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 export default function Features() {
   return (
-    <div className="bg-[#F5F5F5] w-full h-[407px]">
-      <div className="container mx-auto grid grid-cols-4 relative top-[120px]">
-        <div className="w-[275px] h-[167px] flex flex-col justify-center items-start gap-2">
+    <div className="bg-[#F5F5F5] w-full py-8">
+      <div className="container mx-auto grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col justify-center items-start gap-2">
           <FaShippingFast className="w-7.5 h-7.5 text-[#22222280]/50" />
           <h2 className="font-sans font-bold text-lg text-black">
             Fast & Reliable Shipping
@@ -19,7 +19,7 @@ export default function Features() {
             leo.
           </p>
         </div>
-        <div className="w-[275px] h-[167px] flex flex-col justify-center items-start gap-2">
+        <div className="flex flex-col justify-center items-start gap-2">
           <FaCreditCard className="w-7.5 h-7.5 text-[#22222280]/50" />
           <h2 className="font-sans font-bold text-lg text-black">
             Secure Payment
@@ -30,7 +30,7 @@ export default function Features() {
             leo.
           </p>
         </div>
-        <div className="w-[275px] h-[167px] flex flex-col justify-center items-start gap-2">
+        <div className="flex flex-col justify-center items-start gap-2">
           <img
             src={returns}
             alt="easy returns"
@@ -45,7 +45,7 @@ export default function Features() {
             leo.
           </p>
         </div>
-        <div className="w-[275px] h-[167px] flex flex-col justify-center items-start gap-2">
+        <div className="flex flex-col justify-center items-start gap-2">
           <RiCustomerService2Line className="w-7.5 h-7.5 text-[#222222]/50" />
           <h2 className="font-sans font-bold text-lg text-black">
             24/7 Customer Support
