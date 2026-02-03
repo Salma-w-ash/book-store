@@ -9,6 +9,7 @@ import AboutUs from './Pages/AboutUs';
 import ForgotPassword from './Pages/ForgotPassword';
 import ResetPassword from './Pages/ResetPassword';
 import NewPassword from './Pages/NewPassword';
+import Books from './Pages/Books';
 
 export default function Routers() {
   return (
@@ -17,6 +18,7 @@ export default function Routers() {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="home" element={<Home />} />
+            <Route path='/books' element={<Books/>}/>
             <Route path="/aboutus" element={<AboutUs />} />
           </Route>
 

@@ -23,7 +23,7 @@ const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
                   Home
                 </Link>
                 <Link
-                  to="/"
+                  to="/Books"
                   className="text-base font-sans font-regular text-white"
                 >
                   Books
