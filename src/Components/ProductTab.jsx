@@ -6,7 +6,7 @@ import Details from './Details';
 export default function ProductTab() {
     const [ActiveTab, setActiveTab] = useState("details")
   return (
-    <div>
+    <div className='w-full bg-[#f5f5f5]'>
       <div className="container flex justify-center gap-6 p-4">
         <button
           onClick={() => setActiveTab("details")}
@@ -31,7 +31,7 @@ export default function ProductTab() {
         <button
           onClick={() => setActiveTab("Recommended")}
           className={`pb-2 font-sans font-bold text-2xl text-black  ${
-            ActiveTab === "Recommend"
+            ActiveTab === "Recommended"
               ? "border-b-2 border-orange-500 font-semibold"
               : "text-gray-400"
           }`}

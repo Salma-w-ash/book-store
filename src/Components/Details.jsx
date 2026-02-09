@@ -3,7 +3,7 @@ import React from "react";
 export default function Details() {
   return (
     <div>
-      <div className="container">
+      <div className="container mx-auto p-4">
         <p className="font-sans text-[20px] text-black">
           <span className="font-bold">Book Title :</span> Rich Dad And Poor Dad
         </p>

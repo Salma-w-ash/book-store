@@ -8,7 +8,7 @@ export default function AuthLayout() {
   return (
     <div>
         <Header/>
-        <HeroSection/>
+        <HeroSection height={338}/>
         <Outlet/>
         <Footer/>
         

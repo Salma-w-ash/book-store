@@ -6,7 +6,7 @@ export default function Reviews() {
       <div className="container mx-auto min-h-full flex flex-col justify-center gap-2">
         <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
           <div className="max-w-[648px] flex flex-col justify-center bg-white p-4">
-            <div className="flex justify-center">
+            <div className="flex items-center gap-4">
               <img
                 src={profile}
                 alt=""
@@ -20,20 +20,19 @@ export default function Reviews() {
                   Verified Purchase
                 </p>
               </div>
-              <div className="flex flex-col justify-center gap-2">
-                <p className="font-[Inter] font-normal text-[#222222]/50 text-[16px]">
-                  Reviewed On 28/07/2024
-                </p>
-                <div className="flex justify-center gap-2">
-                  <p>Excellent Book</p>
-                  <img src={rate2} alt="" />
-                </div>
-                <p className="font-[Inter] text-[#222222]/50 text-[18px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris et ultricies est. Aliquam in justo varius, sagittis
-                  neque ut,
-                </p>
+            </div>
+            <div className="flex flex-col justify-center gap-2">
+              <p className="font-[Inter] font-normal text-[#222222]/50 text-[16px]">
+                Reviewed On 28/07/2024
+              </p>
+              <div className="flex items-center gap-2">
+                <p>Excellent Book</p>
+                <img src={rate2} alt="" />
               </div>
+              <p className="font-[Inter] text-[#222222]/50 text-[18px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                et ultricies est. Aliquam in justo varius, sagittis neque ut,
+              </p>
             </div>
           </div>
         </div>
