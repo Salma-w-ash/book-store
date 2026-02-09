@@ -10,6 +10,8 @@ import ForgotPassword from './Pages/ForgotPassword';
 import ResetPassword from './Pages/ResetPassword';
 import NewPassword from './Pages/NewPassword';
 import Books from './Pages/Books';
+import SingleBook from './Components/SingleBook';
+import ProductDetails from './Pages/ProductDetails';
 
 export default function Routers() {
   return (
@@ -20,6 +22,7 @@ export default function Routers() {
             <Route path="home" element={<Home />} />
             <Route path='/books' element={<Books/>}/>
             <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/productdetails" element={<ProductDetails />} />
           </Route>
 
           <Route element={<AuthLayout />}>

@@ -14,7 +14,7 @@ export default function Recommendation() {
         <h2 className="font-sans font-bold text-[26px] text-black">
           Recommended For You
         </h2>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="w-162 h-86 p-10 flex justify-between items-start gap-2 bg-white">
             <img src={book} alt="rich dad" className="w-44 h-66" />
             <div className="flex flex-col justify-center items-start gap-3">
