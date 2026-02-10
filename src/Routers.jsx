@@ -12,6 +12,7 @@ import NewPassword from './Pages/NewPassword';
 import Books from './Pages/Books';
 import SingleBook from './Components/SingleBook';
 import ProductDetails from './Pages/ProductDetails';
+import Cart from './Pages/Cart';
 
 export default function Routers() {
   return (
@@ -23,6 +24,7 @@ export default function Routers() {
             <Route path='/books' element={<Books/>}/>
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/productdetails" element={<ProductDetails />} />
+            <Route path="/Cart" element={<Cart />} />
           </Route>
 
           <Route element={<AuthLayout />}>
