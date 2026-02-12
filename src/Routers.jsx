@@ -13,6 +13,7 @@ import Books from './Pages/Books';
 import SingleBook from './Components/SingleBook';
 import ProductDetails from './Pages/ProductDetails';
 import Cart from './Pages/Cart';
+import History from './Pages/History';
 
 export default function Routers() {
   return (
@@ -25,6 +26,7 @@ export default function Routers() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/productdetails" element={<ProductDetails />} />
             <Route path="/Cart" element={<Cart />} />
+            <Route path="/history" element={<History />} />
           </Route>
 
           <Route element={<AuthLayout />}>
