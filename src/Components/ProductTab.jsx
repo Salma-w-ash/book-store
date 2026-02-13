@@ -42,7 +42,7 @@ export default function ProductTab() {
       <div>
         {ActiveTab === "details" && <Details />}
         {ActiveTab === "Reviews" && <Reviews />}
-        {ActiveTab === "Recommended" && <Recommendation />}
+        {ActiveTab === "Recommended" && <Recommendation/>}
       </div>
     </div>
   );

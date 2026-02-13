@@ -11,7 +11,7 @@ export default function OurMission() {
         </h3>
 
         {/* Cards Grid */}
-        <div className="w-full max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-full max-w-[1200px] grid grid-cols-1  lg:grid-cols-3 gap-6">
           {/* Card 1 */}
           <div className="flex flex-col justify-center gap-4 bg-white rounded-lg p-4 shadow">
             <h4 className="font-sans font-bold text-xl sm:text-[22px] text-black">

@@ -6,7 +6,7 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 export default function Features() {
   return (
-    <div className="bg-[#F5F5F5] w-full py-8">
+    <div className="bg-[#F5F5F5] w-full py-15">
       <div className="container mx-auto grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col justify-center items-start gap-2">
           <FaShippingFast className="w-7.5 h-7.5 text-[#22222280]/50" />

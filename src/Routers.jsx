@@ -16,6 +16,8 @@ import Cart from './Pages/Cart';
 import History from './Pages/History';
 import Profile from './Pages/Profile';
 import CheckOut from './Pages/CheckOut';
+import AddToCart from './Components/AddToCart';
+import WishList from './Pages/WishList';
 
 export default function Routers() {
   return (
@@ -31,6 +33,7 @@ export default function Routers() {
             <Route path="/history" element={<History />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/checkout" element={<CheckOut />} />
+            <Route path="/wishlist" element={<WishList />} />
           </Route>
 
           <Route element={<AuthLayout />}>
