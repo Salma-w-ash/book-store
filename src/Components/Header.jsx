@@ -1,9 +1,10 @@
 import React from "react";
 import { useAuthStore } from "../index";
 import logo from "../assets/book-bookmark 1.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import profile from "../assets/Group-8.png"
 export default function Header() {
+  const navigate = useNavigate();
 const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   
   // const token = useAuthStore((state) => state.token);
@@ -78,13 +79,15 @@ const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
           ) : (
             <div className="logBtn flex justify-center items-center gap-2">
               <button
-                type="submit"
+              onClick={() => navigate("/")}
+                type="button"
                 className="w-[79px] h-11 bg-[#D9176C] text-white font-sans font-medium rounded-8 p-3"
               >
                 Login
               </button>
               <button
-                type="submit"
+              onClick={() => navigate("/signup")}
+                type="button"
                 className="w-[79px] h-11 bg-white text-[#D9176C] font-sans font-medium rounded-8"
               >
                 Signup
